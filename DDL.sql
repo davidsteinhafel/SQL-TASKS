@@ -1,15 +1,15 @@
 SHOW databases;
 CREATE DATABASE taskComplete;
 CREATE TABLE customers (
-customer_id int NOT NULL auto_increment,
+customer_id int NOT NULL AUTO_INCREMENT,
 name  varchar(100) NOT NULL,
 age int(11) NOT NULL,
-primary key (customer_id)
+PRIMARY KEY (customer_id)
 );
 CREATE TABLE products (
-product_id int NOT NULL AUTO_increment,
-name varchar(100) not null,
-primary key (product_id)
+product_id int NOT NULL AUTO_INCREMENT,
+name varchar(100) NOT NULL,
+PRIMARY KEY (product_id)
 );
 
 CREATE TABLE orders (
