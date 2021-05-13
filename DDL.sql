@@ -20,3 +20,6 @@ PRIMARY KEY (order_id),
 FOREIGN KEY (fk_customer_id) REFERENCES customers(customer_id),
 FOREIGN KEY (fk_product_id) REFERENCES products(product_id)
 );
+
+
+SELECT C.name, O.order_id FROM customers C LEFT JOIN orders O ON C.customer_id = O.fk_customer_id ORDER BY C.name;
